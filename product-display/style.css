@@ -144,3 +144,41 @@ body {
   color: #111;
   background: #9ff111;
 }
+
+.container .card .cBox .color span {
+  width: 20px;
+  height: 20px;
+  background: #f00;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .card .cBox .color span:nth-child(2) {
+  background: #9bdc24;
+}
+
+.container .card .cBox .color span:nth-child(3) {
+  background: #03a9f2;
+}
+
+.container .card .cBox .color span:nth-child(4) {
+  background: #e9195e;
+}
+
+.container .card .cBox button {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-family: Arial black;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .cBox button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.75s;
+}
